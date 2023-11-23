@@ -452,7 +452,7 @@ body {
   max-width: 350px;
   width: 100%;
   padding: 25px 40px;
-  z-index: 6;
+  z-index: 6000;
   transform: translateX(-100%);
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
