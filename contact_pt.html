@@ -193,7 +193,7 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="contact.html" autocomplete="off">
+          <form action="contact.html" autocomplete="off" name="contact">
             <h3 class="title">Entre em contato</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -345,6 +345,20 @@
     - custom js link
   -->
     <script src="./assets/js/script.js" defer></script>
+
+      
+  <!--COntact -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3HH3zqkbg2SKsZT9xtFK-xQEdwzRSvpTCrQW2EZ2B7eLzULq-lEszU30tTlBKzZtjuQ/exec'
+    const form = document.forms['contact']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
   </body>
 

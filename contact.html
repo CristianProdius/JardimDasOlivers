@@ -202,7 +202,7 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="contact.html" autocomplete="off">
+          <form action="contact.html" autocomplete="off" name="contact">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
               <input type="text" name="name" class="input" />
@@ -366,11 +366,18 @@
   <script src="./assets/js/script.js" defer></script>
   <script src="app.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--COntact -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3HH3zqkbg2SKsZT9xtFK-xQEdwzRSvpTCrQW2EZ2B7eLzULq-lEszU30tTlBKzZtjuQ/exec'
+    const form = document.forms['contact']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 
