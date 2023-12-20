@@ -301,7 +301,7 @@ body {
 }
 
 .btn-link {
-  color: var(--black);
+  color: var(--cultured-1);
   font-weight: var(--fw-600);
   display: flex;
   align-items: center;
@@ -526,6 +526,7 @@ body {
 .hero-text {
   font-size: var(--fs-6);
   margin-block: 16px 30px;
+  color: var(--cultured-1);
 }
 
 .hero .price {
@@ -561,10 +562,10 @@ body {
   flex-direction: column;
 }
 
-.collection-card .card-title { margin-block-end: 12px; }
+.collection-card .card-title { margin-block-end: 12px; color: var(--cultured-1);}
 
 .collection-card .card-text {
-  color: var(--black);
+  color: var(--cultured-1);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   margin-block-end: auto;

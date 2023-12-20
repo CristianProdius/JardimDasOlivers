@@ -16,7 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="stylesheet" href="./assets/css/portofolio.css">
   <script
     src="https://kit.fontawesome.com/64d58efce2.js"
     crossorigin="anonymous"
@@ -63,18 +63,18 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="179" height="26" alt="Jardim das Olivers">
+          <img src="/assets/images/logo.png" width="179" height="26" alt="Jardim das Olivers">
         </a>
 
         <nav class="navbar">
           <ul class="navbar-list">
 
             <li>
-              <a href="#home" class="navbar-link has-after">Home</a>
+              <a href="./index.html" class="navbar-link has-after">Home</a>
             </li>
 
             <li>
-              <a href="./portofolio.html" class="navbar-link has-after">Shop</a>
+              <a href="#" class="navbar-link has-after">Shop</a>
             </li>
 
             <li>
@@ -82,11 +82,11 @@
             </li>
 
             <li>
-              <a href="#offer" class="navbar-link has-after">Offer</a>
+              <a href="/index.html/#offer" class="navbar-link has-after">Offer</a>
             </li>
 
             <li>
-              <a href="./index_pt.html" class="navbar-link has-after">Portugues</a>
+              <a href="./portofolio.html" class="navbar-link has-after">Portugues</a>
             </li>
 
           </ul>
@@ -121,15 +121,15 @@
       <ul class="navbar-list">
 
         <li>
-          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
         </li>
 
         <li>
-          <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
+          <a href="./index.html/#collection" class="navbar-link" data-nav-link>Collection</a>
         </li>
 
         <li>
-          <a href="./portofolio.html" class="navbar-link" data-nav-link>Shop</a>
+          <a href="#" class="navbar-link" data-nav-link>Shop</a>
         </li>
 
         <li>
@@ -137,7 +137,7 @@
         </li>
 
         <li>
-          <a href="./contact_pt.html" class="navbar-link" data-nav-link>Portugues</a>
+          <a href="./portofolio_pt.html" class="navbar-link" data-nav-link>Portugues</a>
         </li>
 
       </ul>
@@ -152,83 +152,78 @@
 
 
   <body>
-    
-  <!-- 
-    - #Contact Form
-  -->
-  <body>
-    <div class="containerContact">
-      <span class="big-circle"></span>
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-           We are here to help and assit you. Let us know that you need help and we will be right back to you.
-          </p>
 
-          <div class="info">
-            <div class="information">
-              <img src="/assets/images/location.png" class="icon" alt=""/>
-              <p>7040-639 Vimieiro</p>
-            </div>
-            <div class="information">
-              <img src="/assets/images/email.png" class="icon" alt="" />
-              <p>oliveirakit2@gmail.com</p>
-            </div>
-            <div class="information">
-              <img src="/assets/images/location.png" class="icon" alt="" />
-              <p>919 181 768</p>
-            </div>
-          </div>
+    <section class="breadcrumb_area">
+      <h1>Jardim Oliveiras</h1>
+      <div class="container">
+        <h2>Our Garden</h2>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a class="active" href="projects-1.html">Products</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/profile.php?id=61551911384258">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
+    <section id="Inventory">
+      <div class="container">
+        <!-- Inventory Menu -->
+        <div class="item-links">
+          <span class="item-link menu-active" data-name="all">All</span>
+          <span class="item-link" data-name="trees">Trees</span>
+          <span class="item-link" data-name="plants">Plants</span>
+          <span class="item-link" data-name="others">Others</span>
         </div>
 
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
-
-          <form action="contact.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
-            </div>
-            <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
-              <span>Phone</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
-            </div>
-            <input type="submit" value="Send" class="btn" />
-          </form>
+        <!--Filter Inventory-->
+        <div class="gallery">
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-01.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-02.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-03.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-04.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-05.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-06.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="plants">
+            <img src="./assets/images/product-07.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="plants">
+            <img src="./assets/images/product-08.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-09.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/product-10.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="plants">
+            <img src="./assets/images/product-11.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/product-12.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/product-13.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/product-14.jpg" alt="">
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+  
 
 
   <!-- 
@@ -269,11 +264,11 @@
           </li>
 
           <li>
-            <a href="./portofolio.html" class="footer-link">New Products</a>
+            <a href="#" class="footer-link">New Products</a>
           </li>
 
           <li>
-            <a href="./portofolio.html" class="footer-link">Best Sellers</a>
+            <a href="#" class="footer-link">Best Sellers</a>
           </li>
 
         </ul>
@@ -285,7 +280,11 @@
           </li>
 
           <li>
-            <a href="tel: +351 919 181 768" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
           </li>
 
           <li>
@@ -365,12 +364,6 @@
   -->
   <script src="./assets/js/script.js" defer></script>
   <script src="app.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

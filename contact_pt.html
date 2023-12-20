@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
@@ -10,12 +10,17 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.ico" >
+  <link rel="shortcut icon" href="./favicon.ico">
 
   <!-- 
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
 
   <!-- 
     - google font link
@@ -43,245 +48,304 @@
   <header class="header">
 
     <div class="alert">
-        <div class="container">
-            <p class="alert-text">Tudo está sendo cuidado</p>
-        </div>
+      <div class="container">
+        <p class="alert-text">Tudo está sendo cuidado</p>
+      </div>
     </div>
-    
+
     <div class="header-top" data-header>
-        <div class="container">
+      <div class="container">
 
-            <button class="nav-open-btn" aria-label="abrir menu" data-nav-toggler>
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-            </button>
+        <button class="nav-open-btn" aria-label="abrir menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
 
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.png" width="179" height="26" alt="Jardim das Oliveiras">
-            </a>
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Jardim das Oliveiras">
+        </a>
 
-            <nav class="navbar">
-                <ul class="navbar-list">
+        <nav class="navbar">
+          <ul class="navbar-list">
 
-                    <li>
-                        <a href="#home" class="navbar-link has-after">Página Inicial</a>
-                    </li>
+            <li>
+              <a href="#home" class="navbar-link has-after">Início</a>
+            </li>
 
-                    <li>
-                        <a href="#shop" class="navbar-link has-after">Loja</a>
-                    </li>
+            <li>
+              <a href="./portofolio_pt.html" class="navbar-link has-after">Loja</a>
+            </li>
 
-                    <li>
-                        <a href="./contact_pt.html/#collection" class="navbar-link has-after">Coleção</a>
-                    </li>
+            <li>
+              <a href="#collection" class="navbar-link has-after">Coleção</a>
+            </li>
 
-                    <li>
-                        <a href="./index_pt.html/#offer" class="navbar-link has-after">Oferta</a>
-                    </li>
+            <li>
+              <a href="#offer" class="navbar-link has-after">Oferta</a>
+            </li>
 
-                    <li>
-                        <a href="./contact.html" class="navbar-link has-after">English</a>
-                    </li>
+            <li>
+              <a href="./index_pt.html" class="navbar-link has-after">Português</a>
+            </li>
 
-                </ul>
-            </nav>
+          </ul>
+        </nav>
 
-        </div>
+      </div>
     </div>
 
-</header>
+  </header>
 
-  
-  <!-- #Navegação para Dispositivos Móveis -->
-  
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
   <div class="sidebar">
     <div class="mobile-navbar" data-navbar>
 
-        <div class="wrapper">
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.png" width="179" height="26" alt="Brilhante">
-            </a>
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
 
-            <button class="nav-close-btn" aria-label="fechar menu" data-nav-toggler>
-                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-            </button>
-        </div>
+        <button class="nav-close-btn" aria-label="fechar menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
 
-        <ul class="navbar-list">
+      <ul class="navbar-list">
 
-            <li>
-                <a href="#home" class="navbar-link" data-nav-link>Início</a>
-            </li>
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Início</a>
+        </li>
 
-            <li>
-                <a href="#collection" class="navbar-link" data-nav-link>Coleção</a>
-            </li>
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Coleção</a>
+        </li>
 
-            <li>
-                <a href="#shop" class="navbar-link" data-nav-link>Loja</a>
-            </li>
+        <li>
+          <a href="./portofolio_pt.html" class="navbar-link" data-nav-link>Loja</a>
+        </li>
 
-            <li>
-                <a href="#offer" class="navbar-link" data-nav-link>Oferta</a>
-            </li>
+        <li>
+          <a href="./index.html#offer" class="navbar-link" data-nav-link>Oferta</a>
+        </li>
 
-            <li>
-                <a href="./index.html" class="navbar-link" data-nav-link>English</a>
-            </li>
+        <li>
+          <a href="./contact_pt.html" class="navbar-link" data-nav-link>Português</a>
+        </li>
 
-        </ul>
+      </ul>
 
     </div>
 
     <div class="overlay" data-nav-toggler data-overlay></div>
-</div>
+  </div>
 
+  <!-- 
+    - #Contact Form
+  -->
 
- <!-- 
+  <body>
+    <div class="containerContact">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Vamos nos comunicar</h3>
+          <p class="text">
+            Estamos aqui para ajudar. Deixe-nos saber do que você precisa e entraremos em contato com você.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="/assets/images/location.png" class="icon" alt="" />
+              <p>7040-639 Vimieiro</p>
+            </div>
+            <div class="information">
+              <img src="/assets/images/email.png" class="icon" alt="" />
+              <p>oliveirakit2@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="/assets/images/location.png" class="icon" alt="" />
+              <p>919 181 768</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Conecte-se conosco:</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="contact.html" autocomplete="off">
+            <h3 class="title">Entre em contato</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Nome de Usuário</label>
+              <span>Nome de Usuário</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Telefone</label>
+              <span>Telefone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Mensagem</label>
+              <span>Mensagem</span>
+            </div>
+            <input type="submit" value="Enviar" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer" data-section>
-    <div class="container">
+    <footer class="footer" data-section>
+      <div class="container">
 
-      <div class="footer-top">
+        <div class="footer-top">
 
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">A Loja</p>
-          </li>
-
-          <li>
-            <p class="footer-list-text">
-              Siga o caminho para <a href="https://www.google.com/maps/dir/41.792043,-6.7694474/jardim+das+oliveiras+vimieiro/@40.1693822,-10.6063939,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4efa3c1c92c87d0f:0x6183eba024216fd9!2m2!1d-7.8404375!2d38.8276875?entry=ttu" class="link">Nossa Loja</a>
-            </p>
-          </li>
-
-          <li>
-            <a href="tel:+351919181768" class="footer-list-text bold">+351 919 181 768</a>
-          </li>
-
-          <li>
-            <a href="mailto:oliveirakit2@gmail.com" class="footer-list-text">oliveirakit2@gmail.com</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Links Úteis</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Novos Produtos</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Mais Vendidos</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Informação</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Iniciar uma Devolução</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contate-nos</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Termos e Condições</a>
-          </li>
-
-        </ul>
-
-        <div class="footer-list">
-
-          <p class="newsletter-title">Boas mensagens por e-mail.</p>
-
-          <p class="newsletter-text">
-            Insira seu e-mail abaixo para ser o primeiro a saber sobre novas coleções e lançamentos de produtos.
-          </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Insira seu endereço de e-mail" required
-              class="email-field">
-
-            <button type="submit" class="btn btn-primary">Inscreva-se</button>
-          </form>
-
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <div class="wrapper">
-          <ul class="social-list">
+          <ul class="footer-list">
 
             <li>
-              <a href="https://www.facebook.com/profile.php?id=61551911384258" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
+              <p class="footer-list-title">A Loja</p>
             </li>
 
             <li>
-              <a href="https://www.facebook.com/profile.php?id=61551911384258" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
+              <p class="footer-list-text">
+                Siga o caminho para <a href="https://www.google.com/maps/dir/41.792043,-6.7694474/jardim+das+oliveiras+vimieiro/@40.1693822,-10.6063939,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4efa3c1c92c87d0f:0x6183eba024216fd9!2m2!1d-7.8404375!2d38.8276875?entry=ttu"
+                  class="link">Nossa Loja</a>
+              </p>
             </li>
 
+            <li>
+              <a href="tel:+351919181768" class="footer-list-text bold">+351 919 181 768</a>
+            </li>
+
+            <li>
+              <a href="mailto:oliveirakit2@gmail.com" class="footer-list-text">oliveirakit2@gmail.com</a>
+            </li>
 
           </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Links Úteis</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Novos Produtos</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Mais Vendidos</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Informações</p>
+            </li>
+
+            <li>
+              <a href="tel:+351 919 181 768" class="footer-link">Contate-nos</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Termos e Condições</a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="newsletter-title">Bons e-mails.</p>
+
+            <p class="newsletter-text">
+              Insira seu e-mail abaixo para ser o primeiro a saber sobre novas coleções e lançamentos de produtos.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Insira seu endereço de e-mail" required
+                class="email-field">
+
+              <button type="submit" class="btn btn-primary">Inscrever-se</button>
+            </form>
+
+          </div>
+
         </div>
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="Glowing">
-        </a>
+        <div class="footer-bottom">
+
+          <div class="wrapper">
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61551911384258" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61551911384258" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="Glowing">
+          </a>
+
+        </div>
 
       </div>
+    </footer>
 
-    </div>
-  </footer>
-
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
+    <a href="#top" class="back-top-btn" aria-label="voltar ao topo" data-back-top-btn>
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+  </body>
 
 </html>
