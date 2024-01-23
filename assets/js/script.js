@@ -19,7 +19,7 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 /**
- * navbar toggle
+ * navbar toggle  +
  */
 
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
@@ -120,3 +120,49 @@ window.addEventListener('load',()=>{
     }
   })
 })
+
+
+
+/*Translations*/ 
+
+var resources = {
+  en: {
+    translation: {
+      "Home": "Home",
+      "Shop": "Shop",
+      "Contact us": "Contact us",
+      "Offer": "Offer",
+      "Lang": "Português"
+    }
+  },
+  pt: {
+    translation: {
+      "Home": "Início",
+      "Shop": "Loja",
+      "Contact us": "Contate-Nos",
+      "Offer": "Oferta",
+      // Add more key-value pairs for other text you want to translate
+      "Lang": "English"
+    }
+  }
+};
+
+
+i18next.init({
+  lng: 'en',
+  resources: resources
+}, function(err, t) {
+  // Initialize jquery-i18next
+  jqueryI18next.init(i18next, $);
+  
+  // Localize your HTML
+  $('body').localize();
+});
+
+
+$('#lang-switch').click(function() {
+  var newLang = i18next.language === 'en' ? 'pt' : 'en';
+  i18next.changeLanguage(newLang, function(err, t) {
+    $('body').localize();
+  });
+});
