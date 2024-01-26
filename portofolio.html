@@ -45,11 +45,12 @@
     - #HEADER
   -->
 
+  
   <header class="header">
 
     <div class="alert">
       <div class="container">
-        <p class="alert-text">Everything is under taking care of</p>
+        <p class="alert-text" data-i18n="alert">Tudo está sob cuidado</p>
       </div>
     </div>
     
@@ -63,30 +64,30 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="/assets/images/logo.png" width="179" height="26" alt="Jardim das Olivers">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Jardim das Olivers">
         </a>
 
         <nav class="navbar">
           <ul class="navbar-list">
 
             <li>
-              <a href="./index.html" class="navbar-link has-after">Home</a>
+              <a href="./index.html" class="navbar-link has-after" data-i18n="home">Início</a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link has-after">Shop</a>
+              <a href="./portofolio.html" class="navbar-link has-after" data-i18n="shop">Comprar</a>
             </li>
 
             <li>
-              <a href="#collection" class="navbar-link has-after">Collection</a>
+              <a href="./contact.html" class="navbar-link has-after" data-i18n="contact">Contate-nos</a>
             </li>
 
             <li>
-              <a href="/index.html/#offer" class="navbar-link has-after">Offer</a>
+              <a href="./index.html#offer" class="navbar-link has-after" data-i18n="offer">Oferecer</a>
             </li>
 
             <li>
-              <a href="./portofolio.html" class="navbar-link has-after">Portugues</a>
+              <a href="#" id="lang-switch"  navbar-link has-after data-i18n="lang">English</a>
             </li>
 
           </ul>
@@ -110,7 +111,7 @@
 
       <div class="wrapper">
         <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+          <img src="./assets/images/logo.png" width="179" height="26">
         </a>
 
         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -121,23 +122,23 @@
       <ul class="navbar-list">
 
         <li>
-          <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          <a href="./index.html" class="navbar-link" data-nav-link data-i18n="home">Início</a>
         </li>
 
         <li>
-          <a href="./index.html/#collection" class="navbar-link" data-nav-link>Collection</a>
+          <a href="./contact.html" class="navbar-link" data-nav-link data-i18n="contact">Contate-nos</a>
         </li>
 
         <li>
-          <a href="#" class="navbar-link" data-nav-link>Shop</a>
+          <a href="./portofolio.html" class="navbar-link" data-nav-link data-i18n="shop">Comprar</a>
         </li>
 
         <li>
-          <a href="./index.html#offer" class="navbar-link" data-nav-link>Offer</a>
+          <a href="./index.html#offer" class="navbar-link" data-nav-link data-i18n="offer">Oferecer</a>
         </li>
 
         <li>
-          <a href="./portofolio_pt.html" class="navbar-link" data-nav-link>Portugues</a>
+          <a href="#" id="lang-switch"  class="navbar-link" data-nav-link data-i18n="lang">English</a>
         </li>
 
       </ul>
@@ -151,16 +152,17 @@
 
 
 
+
   <body>
 
     <section class="breadcrumb_area">
       <h1>Jardim Oliveiras</h1>
       <div class="container">
-        <h2>Our Garden</h2>
+        <h2 data-i18n="por1">Nosso jardim</h2>
         <ul class="nav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" data-i18n="home">Início</a></li>
           <li>
-            <a class="active" href="projects-1.html">Products</a>
+            <a class="active" href="projects-1.html" data-i18n="por2">Produtos</a>
           </li>
         </ul>
       </div>
@@ -170,10 +172,10 @@
       <div class="container">
         <!-- Inventory Menu -->
         <div class="item-links">
-          <span class="item-link menu-active" data-name="all">All</span>
-          <span class="item-link" data-name="trees">Trees</span>
-          <span class="item-link" data-name="plants">Plants</span>
-          <span class="item-link" data-name="others">Others</span>
+          <span class="item-link menu-active" data-name="all" data-i18n="por3">Todos</span>
+          <span class="item-link" data-name="trees" data-i18n="por4">Árvores</span>
+          <span class="item-link" data-name="plants" data-i18n="por5">Plantas</span>
+          <span class="item-link" data-name="others" data-i18n="por6">Decoração</span>
         </div>
 
         <!--Filter Inventory-->
@@ -220,7 +222,60 @@
           <div class="inventroy-item" data-name="others">
             <img src="./assets/images/product-14.jpg" alt="">
           </div>
-        </div>
+
+
+          <!--Decorations-->
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/dec1.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/dec2.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/dec3.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="others">
+            <img src="./assets/images/dec4.jpg" alt="">
+          </div>
+
+
+          <!--Plants-->
+          <div class="inventroy-item" data-name="plants">
+            <img src="./assets/images/plant1.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="plants">
+            <img src="./assets/images/plant2.jpg" alt="">
+          </div>
+
+
+          <!--Trees-->
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree1.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree2.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree3.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree4.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree5.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree6.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree7.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree8.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="trees">
+            <img src="./assets/images/tree9.jpg" alt="">
+          </div>
       </div>
     </section>
   
@@ -238,13 +293,11 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">The Store</p>
+            <p class="footer-list-title" data-i18n="ft1">A loja</p>
           </li>
 
           <li>
-            <p class="footer-list-text">
-              Take the road to <a href="https://www.google.com/maps/dir/41.792043,-6.7694474/jardim+das+oliveiras+vimieiro/@40.1693822,-10.6063939,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4efa3c1c92c87d0f:0x6183eba024216fd9!2m2!1d-7.8404375!2d38.8276875?entry=ttu" class="link">Our Store</a>
-            </p>
+            <a data-i18n="ft2" href="https://www.google.com/maps/dir/41.792043,-6.7694474/jardim+das+oliveiras+vimieiro/@40.1693822,-10.6063939,7z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4efa3c1c92c87d0f:0x6183eba024216fd9!2m2!1d-7.8404375!2d38.8276875?entry=ttu" class="link">  Pegue o caminho para a loja</a>
           </li>
 
           <li>
@@ -260,55 +313,53 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Useful links</p>
+            <p class="footer-list-title" data-i18n="ft3">Links úteis</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">New Products</a>
+            <a href="./portofolio.html" class="footer-link" data-i18n="ft4">Novos Produtos</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Best Sellers</a>
+            <a href="./portofolio.html" class="footer-link" data-i18n="ft5">Mais Vendidos</a>
           </li>
 
         </ul>
 
         <ul class="footer-list">
-
           <li>
-            <p class="footer-list-title">Infomation</p>
+            <p class="footer-list-title" data-i18n="ft6">Páginas Importantes</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Start a Return</a>
+            <a href="./abaut_us.html" class="footer-link" data-i18n="ft7">Sobre Nós</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="./contact.html" class="footer-link" data-i18n="ft8">Contate-Nos</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link" data-i18n="ft9">Termos & Condições</a>
           </li>
 
         </ul>
+<div class="footer-list">
 
-        <div class="footer-list">
+  <p class="newsletter-title" data-i18n="ft10">Bons emails.</p>
 
-          <p class="newsletter-title">Good emails.</p>
+  <p class="newsletter-text" data-i18n="ft11">
+    Insira seu email abaixo para ser o primeiro a saber sobre novas coleções e lançamentos de produtos.
+  </p>
 
-          <p class="newsletter-text">
-            Enter your email below to be the first to know about new collections and product launches.
-          </p>
+  <form action="" class="newsletter-form">
+    <input type="email" name="email_address" placeholder="Insira seu endereço de email" data-i18n="[placeholder]f13" required
+      class="email-field">
 
-          <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Enter your email address" required
-              class="email-field">
+    <button type="submit" class="btn btn-primary" data-i18n="ft12">Inscrever-se</button>
+  </form>
 
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-
-        </div>
+</div>
 
       </div>
 
@@ -356,6 +407,14 @@
   </a>
 
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+ <!-- i18next scripts -->
+ <script src="https://unpkg.com/i18next@19.9.2/i18next.min.js"></script>
+ <script src="https://unpkg.com/jquery-i18next@1.2.0/jquery-i18next.min.js"></script>
 
 
 

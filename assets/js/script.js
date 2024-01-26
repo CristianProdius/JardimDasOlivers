@@ -187,7 +187,25 @@ var resources = {
       "ft9":"Termos & Condições",
       "ft11":"Insira seu email abaixo para ser o primeiro a saber sobre novas coleções e lançamentos de produtos.",
       "ft12":"Inscrever-se",
-      "[placeholder]f13":"Insira seu endereço de email"
+      "[placeholder]f13":"Insira seu endereço de email",
+
+      //Contact Page
+      "con1": "Vamos entrar em contato",
+      "con2": "Estamos aqui para ajudar e auxiliar você. Deixe-nos saber que você precisa de ajuda e entraremos em contato com você.",
+      "con3": "Conecte-se conosco :",
+      "con4": "Contate-nos",
+      "con5": "Nome de usuário",
+      "con7": "E-mail",
+      "con9": "Telefone",
+      "con11":"Mensagem",
+
+      //Portofolio
+      "por1": "Nosso jardim",
+      "por2": "Produtos",
+      "por3": "Todos",
+      "por4": "Árvores",
+      "por5": "Plantas",
+      "por6": "Decoração"
     }
   },
   en: {
@@ -251,10 +269,25 @@ var resources = {
       "ft9":"Terms & Conditions",
       "ft11":"Enter your email below to be the first to know about new collections and product launches.",
       "ft12":"Subscribe",
-      "[placeholder]f13":"Enter your email address"
+      "[placeholder]f13":"Enter your email address",
 
+      //Contact Page
+      "con1": "Let's get in touch",
+      "con2": "We are here to help and assist you. Let us know what you need help with and we will get back to you.",
+      "con3": "Connect with us :",
+      "con4": "Contact Us",
+      "con5": "Username",
+      "con7": "Email",
+      "con9": "Phone",
+      "con11":"Message",
 
-
+      //portofolio
+      "por1": "Our Garden",
+      "por2": "Products",
+      "por3": "All",
+      "por4": "Trees",
+      "por5": "Plants",
+      "por6": "Decorations"
     }
   }
 };
