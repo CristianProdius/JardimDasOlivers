@@ -180,10 +180,9 @@ body {
 \*-----------------------------------*/
 
 .h1.hero-title {
-  color: black;
+  color: white;
 }
 
-h1 hero
 
 .container { padding-inline: 15px; }
 
@@ -533,7 +532,7 @@ h1 hero
 .hero-text {
   font-size: var(--fs-6);
   margin-block: 16px 30px;
-  color: var( --black);
+  color: white;
 }
 
 .hero .price {
@@ -555,9 +554,12 @@ h1 hero
 
 .collection { padding-block-start: 0; }
 
+
 .collection-list {
   display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
   gap: 15px;
+  grid-auto-flow: row !important;
 }
 
 .collection-card {
@@ -567,6 +569,7 @@ h1 hero
   padding-block-end: 30px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px !important;
 }
 
 .collection-card .card-title { margin-block-end: 12px; color: var(--cultured-1);}
@@ -1080,10 +1083,15 @@ h1 hero
 
 
 
+
+
 @media (max-width: 600px) {
   .hero-card.has-bg-image {
     background-image: none !important;
     background-color: rgb(210, 210, 210) !important; /* Replace with your desired color */
+  }
+  .collection-list {
+    grid-template-columns: 1fr !important;
   }
 }
 /**

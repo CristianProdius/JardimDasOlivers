@@ -98,22 +98,47 @@ addEventOnElem(window, "scroll", scrollReveal);
 
 
 /*
-  Inventory FIlter
+  Inventory Filter
 */
 let filterItem = document.querySelector('.item-links');
 let filterImages = document.querySelectorAll('.inventroy-item');
 
-window.addEventListener('load',()=>{
-  filterItem.addEventListener('click',(selectedItem)=>{
-    if(selectedItem.target.classList.contains('item-link')){
+window.addEventListener('load', () => {
+  // Get the section from the URL
+  var urlParams = new URLSearchParams(window.location.search);
+  var section = urlParams.get('section');
+
+  // If a section was provided, set it as the active menu item
+  if (section) {
+    var activeLink = document.querySelector('.item-link.menu-active');
+    if (activeLink) {
+      activeLink.classList.remove('menu-active');
+    }
+
+    var newActiveLink = document.querySelector('.item-link[data-name="' + section + '"]');
+    if (newActiveLink) {
+      newActiveLink.classList.add('menu-active');
+      filterImages.forEach((image) => {
+        let filterImages = image.getAttribute('data-name');
+        if ((filterImages == section) || section == 'all') {
+          image.style.display = 'block'
+        } else {
+          image.style.display = 'none'
+        }
+      })
+    }
+  }
+
+  filterItem.addEventListener('click', (selectedItem) => {
+    if (selectedItem.target.classList.contains('item-link')) {
       document.querySelector('.menu-active').classList.remove('menu-active');
       selectedItem.target.classList.add('menu-active');
       let filterName = selectedItem.target.getAttribute('data-name');
-      filterImages.forEach((image)=>{
+      filterImages.forEach((image) => {
         let filterImages = image.getAttribute('data-name');
-        if((filterImages == filterName) || filterName == 'all'){
+        if ((filterImages == filterName) || filterName == 'all') {
           image.style.display = 'block'
-        } else{
+        } else {
           image.style.display = 'none'
         }
       })
@@ -141,15 +166,18 @@ var resources = {
       "h4": "Somos uma equipa com experiencia, com ideias e inspiração que muda o seu espaço exterior numa beleza.",
       "h-btn": "Comprar plantas",
       "map": "Aqui está como você pode nos encontrar",
-      "c-t1": "Coleção Palmas",
+      "c-t1": "Coleção Oliveiras",
       "c-p1": "De todo o mundo",
       "c-b1": "Veja o Catálogo",
-      "c-t2": "Coleção Oliveiras",	
+      "c-t2": "Coleção de Plantas",	
       "c-p2": "Grande Diversidade",
       "c-b2": "Descubra agora",
-      "c-t3": "Promoções",
-      "c-p3": "Faça o acordo",
+      "c-t3": "Pedra de decoração",
+      "c-p3": "Vários tamanhos",
       "c-b3": "Dê uma olhada",
+      "c-t4": "Processo de transplantação de oliveiras",
+      "c-b4": "Olhe aqui",
+
       "s-title": "Os Mais Vendido",
       "s-text": "Ver Todos os Produtos",
       "s2-title": "Pode Interessar Você",
@@ -205,7 +233,8 @@ var resources = {
       "por3": "Todos",
       "por4": "Árvores",
       "por5": "Plantas",
-      "por6": "Decoração"
+      "por6": "Decoração",
+      "por7": "Processo de transplantação de oliveiras"
     }
   },
   en: {
@@ -223,15 +252,17 @@ var resources = {
       "h4": "We are a team with experience, with ideas and inspiration that changes your exterior space into a beauty.",
       "h-btn": "Buy plants",
       "map": "Here is how you can find us",
-      "c-t1": "Palms Collection",
+      "c-t1": "Olivers Collection",
       "c-p1": "From all over the world",
       "c-b1": "See Catalog",
-      "c-t2": "Olive Collection",
+      "c-t2": "Plants Collection",
       "c-p2": "Great Diversity",
       "c-b2": "Discover now",
-      "c-t3": "Promotions",
-      "c-p3": "Make the deal",
+      "c-t3": "Decoratives Rocks",
+      "c-p3": "Differens sizes",
       "c-b3": "Take a look",
+      "c-t4": "Olive trees transplantation process",
+      "c-b4": "Look here",
       "s-title": "Best Sellers",
       "s-text": "View All Products",
       "s2-title": "You May Also Like",
@@ -287,7 +318,8 @@ var resources = {
       "por3": "All",
       "por4": "Trees",
       "por5": "Plants",
-      "por6": "Decorations"
+      "por6": "Decorations",
+      "por7": "Olive trees transplantation process"
     }
   }
 };

@@ -37,6 +37,8 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
   <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body id="top">
@@ -162,7 +164,7 @@
         <ul class="nav">
           <li><a href="index.html" data-i18n="home">Início</a></li>
           <li>
-            <a class="active" href="projects-1.html" data-i18n="por2">Produtos</a>
+            <a class="active" data-i18n="por2">Produtos</a>
           </li>
         </ul>
       </div>
@@ -173,9 +175,10 @@
         <!-- Inventory Menu -->
         <div class="item-links">
           <span class="item-link menu-active" data-name="all" data-i18n="por3">Todos</span>
-          <span class="item-link" data-name="trees" data-i18n="por4">Árvores</span>
+          <span class="item-link " data-name="trees" data-i18n="por4">Árvores</span>
           <span class="item-link" data-name="plants" data-i18n="por5">Plantas</span>
-          <span class="item-link" data-name="others" data-i18n="por6">Decoração</span>
+          <span class="item-link" data-name="others" id="others" data-i18n="por6">Decoração</span>
+          <span class="item-link" data-name="transport" id="transport" data-i18n="por7">Processo de transplantação de oliveiras</span>
         </div>
 
         <!--Filter Inventory-->
@@ -276,6 +279,19 @@
           <div class="inventroy-item" data-name="trees">
             <img src="./assets/images/tree9.jpg" alt="">
           </div>
+
+          <!--Transport-->
+          <div class="inventroy-item" data-name="transport">
+            <img src="./assets/images/trans1.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="transport">
+            <img src="./assets/images/trans2.jpg" alt="">
+          </div>
+          <div class="inventroy-item" data-name="transport">
+            <img src="./assets/images/trans3.jpg" alt="">
+          </div>
+
+
       </div>
     </section>
   

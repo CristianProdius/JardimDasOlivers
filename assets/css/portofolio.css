@@ -36,6 +36,10 @@
     transition: .4s ease;
 }
 
+.item-link:last-child{
+    white-space: nowrap;
+}
+
 .item-link:hover{
     background: hsl(148, 20%, 38%);
     color: white;
