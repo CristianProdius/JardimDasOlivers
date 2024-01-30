@@ -156,7 +156,7 @@ var resources = {
       "alert": "Tudo está sendo cuidado",
       "home": "Início",
       "shop": "Loja",
-      "contact": "Contato",
+      "contact": "Contacto",
       "offer": "Oferta",
       "lang": "English",
       "heroTitle": "Nossa história",
