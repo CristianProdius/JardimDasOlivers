@@ -153,7 +153,7 @@ window.addEventListener('load', () => {
 var resources = {
   pt: {
     translation: {
-      "alert": "Tudo está sendo cuidado",
+      "alert": "Sabemos bem tratar da beleza do seu jardim",
       "home": "Início",
       "shop": "Loja",
       "contact": "Contacto",
