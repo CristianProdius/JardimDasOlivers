@@ -239,7 +239,7 @@ var resources = {
   },
   en: {
     translation: {
-      "alert": "Everything is taking care of",
+      "alert": "We know how to treat your garden",
       "home": "Home",
       "shop": "Shop",
       "contact": "Contact",
